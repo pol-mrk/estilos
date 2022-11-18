@@ -1,0 +1,97 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    /* propiedad que permite alterar la altura */
+    height: 100vh;
+    background-color: black;
+    background-image: url("../img/drake-posa-camiseta-especial-barca-clasico_98.webp'");
+    background-position: center;
+    background-size: cover;
+}
+
+#header h1 {
+    color: white;
+    margin: 0;
+    padding: 0 20%;
+    font-size: 50px;
+}
+
+#main {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#main p {
+    font-size: 20px;
+}
+
+#main h1 {
+    font-size: 40px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.content {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+#footer {
+    text-align: center;
+    background-color: black;
+    color: gray;
+    padding: 10px;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#000000, #000000);
+    opacity: 0.7;
+}
+
+#texto {
+    z-index: 1;
+}
+
+
+/*Diseño responsive*/
+
+@media only screen and (max-width: 600px) {
+    #header h1 {
+        padding: 0 1%;
+        font-size: 40px;
+    }
+    #main {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    #main p {
+        font-size: 16px;
+    }
+    #main h1 {
+        font-size: 35px;
+    }
+}
